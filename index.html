@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Duel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🐍 Snake Duel</h1>
+
+    <p id="status">Waiting for opponent...</p>
+
+    <canvas id="game" width="600" height="400"></canvas>
+
+    <div id="gameButtons">
+
+        <button id="join">
+            JOIN GAME
+        </button>
+
+        <button id="rematch" disabled>
+            REMATCH
+        </button>
+
+    </div>
+
+    <div id="controls">
+
+        <button data-direction="up">⬆️</button>
+
+        <div>
+            <button data-direction="left">⬅️</button>
+            <button data-direction="down">⬇️</button>
+            <button data-direction="right">➡️</button>
+        </div>
+
+    </div>
+
+    <p>
+        🟩 Green: WASD<br>
+        🟥 Red: Arrow Keys
+    </p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>

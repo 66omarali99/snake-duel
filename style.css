@@ -1,0 +1,56 @@
+body {
+    background: #111;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+canvas {
+    background: #222;
+    border: 4px solid white;
+    image-rendering: pixelated;
+    max-width: 90%;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#controls {
+    margin-top: 15px;
+}
+
+#controls button {
+    width: 55px;
+    height: 55px;
+    margin: 3px;
+    font-size: 22px;
+}
+
+@media (min-width: 700px) {
+    #controls {
+        display: none;
+    }
+}
+
+#gameButtons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#gameButtons button {
+    min-width: 140px;
+}
+
+#rematch:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
